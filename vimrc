@@ -7,7 +7,7 @@ set fileencodings=utf-8,gb2312,gb18030,gbk,ucs-bom,cp936,latin1
 set tags+=~/.vim/cpp_tags
 
 " enable filetype dectection and ft specific plugin/indent
-filetype plugin indent on
+" filetype plugin indent on
 
 " enable syntax hightlight and completion
 syntax on

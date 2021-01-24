@@ -64,4 +64,4 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'tomasr/molokai'
 Plugin 'chriskempson/vim-tomorrow-theme'
 
-filetype plugin indent on     " required!
+" filetype plugin indent on     " required!
