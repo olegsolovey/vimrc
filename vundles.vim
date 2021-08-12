@@ -9,27 +9,27 @@ call vundle#rc()
 Plugin 'gmarik/vundle'
 
 " Code Completions
-Plugin 'Shougo/neocomplcache'
-Plugin 'Raimondi/delimitMate'
-Plugin 'ervandew/supertab'
+" Plugin 'Shougo/neocomplcache'
+" Plugin 'Raimondi/delimitMate'
+" Plugin 'ervandew/supertab'
 
 " snippets
 "Plugin 'garbas/vim-snipmate'
 "Plugin 'honza/vim-snippets'
 " snipmate dependencies
-"Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'tomtom/tlib_vim'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+" Plugin 'tomtom/tlib_vim'
 
 " Fast navigation
 Plugin 'jwhitley/vim-matchit'
 Plugin 'Lokaltog/vim-easymotion'
 
 " Fast editing
-Plugin 'tpope/vim-surround'
+" Plugin 'tpope/vim-surround'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'sjl/gundo.vim'
 "Plugin 'godlygeek/tabular'
-Plugin 'nathanaelkane/vim-indent-guides'
+" Plugin 'nathanaelkane/vim-indent-guides'
 
 " IDE features
 Plugin 'scrooloose/nerdtree'
@@ -64,4 +64,4 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'tomasr/molokai'
 Plugin 'chriskempson/vim-tomorrow-theme'
 
-" filetype plugin indent on     " required!
+filetype plugin indent on     " required!
