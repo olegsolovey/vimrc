@@ -51,7 +51,7 @@ Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'tpope/vim-markdown'
 " Plugin 'timcharper/textile.vim'
 " Golang
-Plugin 'fatih/vim-go'
+" Plugin 'fatih/vim-go'
 
 " FPs
 Plugin 'kien/rainbow_parentheses.vim'
