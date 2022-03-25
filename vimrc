@@ -25,6 +25,9 @@ set cursorline cursorcolumn
 
 set colorcolumn=80
 
+set nobackup
+set noswapfile
+
 " search
 set incsearch
 "set highlight 	                                                  " conflict with highlight current line
