@@ -9,6 +9,10 @@ set fileencodings=utf-8,gb2312,gb18030,gbk,ucs-bom,cp936,latin1
 " enable filetype dectection and ft specific plugin/indent
 "filetype plugin indent on
 
+set nobackup
+set noswapfile
+set noundofile
+
 " enable syntax hightlight and completion
 syntax on
 
@@ -17,6 +21,7 @@ syntax on
 " color scheme
 set background=dark
 colorscheme molokai
+" colorscheme blue
 
 " highlight current line
 au WinLeave * set nocursorline nocursorcolumn
@@ -24,9 +29,6 @@ au WinEnter * set cursorline cursorcolumn
 set cursorline cursorcolumn
 
 set colorcolumn=80
-
-set nobackup
-set noswapfile
 
 " search
 set incsearch
@@ -128,7 +130,7 @@ let g:tagbar_type_markdown = {
 
 " Nerd Tree
 let NERDChristmasTree=0
-let NERDTreeWinSize=30
+let NERDTreeWinSize=40
 let NERDTreeChDirMode=2
 let NERDTreeIgnore=['\~$', '\.pyc$', '\.swp$']
 " let NERDTreeSortOrder=['^__\.py$', '\/$', '*', '\.swp$',  '\~$']
@@ -141,6 +143,7 @@ let NERDSpaceDelims=1
 let NERDCompactSexyComs=1
 let NERDTreeShowHidden=1
 
+:imap jj <Esc>
 " powerline
 "let g:Powerline_symbols = 'fancy'
 
@@ -271,3 +274,22 @@ nnoremap ; :
 set listchars=eol:¬,space:·,tab:-▸,trail:·
 "set listchars=tab:!·,trail:·
 set list
+
+" vimdiff diffget
+map <Leader>1 :diffget LOCAL<CR>
+map <Leader>2 :diffget BASE<CR>
+map <Leader>3 :diffget REMOTE<CR>
+
+"clang-format
+
+function FormatFile()
+  let l:lines="all"
+  if has('python')
+    pyf /usr/share/clang/clang-format-12/clang-format.py
+  elseif has('python3')
+    py3f /usr/share/clang/clang-format-12/clang-format.py
+
+  endif
+endfunction
+map <C-K> :call FormatFile()<cr>
+
