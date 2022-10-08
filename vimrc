@@ -110,7 +110,7 @@ hi Tb_VisibleNormal ctermbg=252 ctermfg=235
 hi Tb_VisibleChanged guifg=green ctermbg=252 ctermfg=white
 
 " easy-motion
-let g:EasyMotion_leader_key = '<Leader>'
+"let g:EasyMotion_leader_key = '<Leader>'
 
 " Tagbar
 let g:tagbar_left=1
@@ -282,14 +282,14 @@ map <Leader>3 :diffget REMOTE<CR>
 
 "clang-format
 
-function FormatFile()
-  let l:lines="all"
-  if has('python')
-    pyf /usr/share/clang/clang-format-12/clang-format.py
-  elseif has('python3')
-    py3f /usr/share/clang/clang-format-12/clang-format.py
-
-  endif
-endfunction
-map <C-K> :call FormatFile()<cr>
+"function FormatFile()
+"  let l:lines="all"
+"  if has('python')
+"    pyf /usr/share/clang/clang-format-12/clang-format.py
+"  elseif has('python3')
+"    py3f /usr/share/clang/clang-format-12/clang-format.py
+"
+"  endif
+"endfunction
+"map <C-K> :call FormatFile()<cr>
 
