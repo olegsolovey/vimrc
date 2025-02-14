@@ -293,3 +293,8 @@ map <Leader>3 :diffget REMOTE<CR>
 "endfunction
 "map <C-K> :call FormatFile()<cr>
 
+"folding
+:set foldenable
+:set foldmethod=indent
+:set foldlevel=99
+
