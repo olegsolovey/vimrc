@@ -24,5 +24,5 @@ git clone https://github.com/VundleVim/Vundle.vim ~/.vim/bundle/Vundle.vim
 vim -c 'PluginInstall' -c 'qa!'
 
 # YouCompleteMe C++ autocompletion
-cd ~/.vim/bundle/YouCompleteMe/
-./install.py --clangd-completer
+#cd ~/.vim/bundle/YouCompleteMe/
+#./install.py --clangd-completer
